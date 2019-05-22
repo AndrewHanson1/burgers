@@ -4,7 +4,7 @@
   "description": "burger app",
   "main": "index.js",
   "scripts": {
-    "start": "server.js"
+    "start": "node server.js"
   },
   "author": "ALH",
   "license": "ISC",
