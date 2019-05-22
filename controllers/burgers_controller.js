@@ -12,7 +12,7 @@ router.get("/", function(req, res) {
       burger: burger
     };
     console.log(handlebarsObject);
-    res.render("index", handlebarsObject);
+    res.render("main", handlebarsObject);
   });
 });
 
