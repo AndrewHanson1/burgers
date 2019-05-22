@@ -1,5 +1,4 @@
 {
-
   "name": "burger",
   "version": "1.0.0",
   "description": "burger app",
@@ -14,5 +13,4 @@
     "express-handlebars": "^3.1.0",
     "mysql": "^2.17.1"
   }
-  
 }
