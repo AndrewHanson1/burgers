@@ -1,25 +1,20 @@
-<h1>Burger</h1>
 
-<h2>Burgers That Aren't devoured</h2>
+<h2>Burgers That I Should Eat</h2>
 
 <ul>
   {{#each burger}}
 
   {{#unless devoured}}
-  <p>{{burger_name}}</p>
-
-  
-
-  
-
-  <button class="change-devour" type="submit">Eat</button>
+  <p>{{burger_name}} <button id="{{burger_name}}" class="change-devour" type="submit">Eat</button> </p>
 
   {{/unless}}
 
   {{/each}}
 </ul>
 
-<h2>Burgers that are eaten</h2>
+<p>---------------------------------------------------------------------------------</p>
+
+<h2>Burgers that I ate</h2>
 
 <ul>
   {{#each burger}}

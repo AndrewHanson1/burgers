@@ -67,9 +67,15 @@ var orm = {
       var queryString = "UPDATE " + table;
   
       queryString += " SET ";
-      queryString += objToSql(vals);
+      queryString += "devoured = 1"
+      //queryString += objToSql(vals);
       queryString += " WHERE ";
+      console.log(condition);
+      
       queryString += condition;
+      queryString += ";"
+      console.log(queryString);
+      
   
       
       connection.query(queryString, function(err, result) {

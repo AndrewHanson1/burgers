@@ -1,7 +1,10 @@
 // Make sure we wait to attach our handlers until the DOM is fully loaded.
 $(function() {
     $(".change-devour").on("click", function(event) {
-        var name = "Test"
+        
+        var name = $(this).attr("id");
+        console.log(name);
+        
         
     
         var newDevourState = {
@@ -14,7 +17,7 @@ $(function() {
           data: newDevourState
         }).then(
           function() {
-            console.log("changed devour to", devoured);
+            console.log("created new burger");
             // Reload the page to get the updated list
             location.reload();
           }

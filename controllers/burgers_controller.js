@@ -19,12 +19,12 @@ router.get("/", function(req, res) {
 router.post("/api/burgers", function(req, res) {
   burger.insertOne(["burger_name", "devoured"], [req.body.name, req.body.devoured], function(result) {
     // Send back the ID of the new quote
-    res.json({ name: result.insertName });
+    res.json({ burger_name: result.insertName });
   });
 });
 
 router.put("/api/burgers/:name", function(req, res) {
-  var condition = "name = " + req.params.name;
+  var condition = "burger_name = " +  "'" + req.params.name + "'";
 
   console.log("condition", condition);
 
