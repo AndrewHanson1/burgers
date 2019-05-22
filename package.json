@@ -2,9 +2,9 @@
   "name": "burger",
   "version": "1.0.0",
   "description": "burger app",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node index.js"
   },
   "author": "ALH",
   "license": "ISC",
@@ -14,6 +14,7 @@
     "mysql": "^2.17.1"
   },
   "engines": {
-    "node": "10.15.3"
+    "node": "10.15.3",
+    "npm": "6.4.1"
   }
 }
